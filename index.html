@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimistic Production Schedule</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Optimistic Production Schedule</h1>
+    <p>Visualizing the optimized production schedule with summarized metrics.</p>
+  </header>
+  <section class="upload-container">
+    <h2>Upload Input Files</h2>
+    <form id="upload-form" action="upload.php" method="POST" enctype="multipart/form-data">
+      <label for="orders">Upload Orders File:</label>
+      <input type="file" name="orders" id="orders" accept=".csv" required><br>
+      <label for="inventory">Upload Inventory File:</label>
+      <input type="file" name="inventory" id="inventory" accept=".csv" required><br>
+      <button type="submit">Upload and Process</button>
+    </form>
+  </section>
+
+  <section class="summary">
+    <h2>Summary</h2>
+    <ul>
+      <li><strong>Total Orders Processed:</strong> <span id="total-orders"></span></li>
+      <li><strong>Total Production Days:</strong> <span id="total-production-days"></span></li>
+      <li><strong>Average Lead Time:</strong> <span id="average-lead-time"></span> days</li>
+    </ul>
+    <button id="clear-response" class="clear-button">Clear Response</button>
+  </section>
+  
+  <section class="table-container">
+    <h2>Detailed Production Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order No</th>
+          <th>Item Code</th>
+          <th>Item Description</th>
+          <th>Order Quantity</th>
+          <th>Lead Time (days)</th>
+          <th>Lead Time Completion Date</th>
+          <th>Production Date</th>
+          <th>Quantity Line 1</th>
+          <th>Quantity Line 2</th>
+          <th>Quantity Line 3</th>
+          <th>Quantity Line 4</th>
+          <th>Minutes Used</th>
+        </tr>
+      </thead>
+      <tbody id="schedule-data">
+        <!-- Data will be inserted dynamically -->
+      </tbody>
+    </table>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Production Management System</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
