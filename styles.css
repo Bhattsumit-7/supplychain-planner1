@@ -1,122 +1,153 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-  }
-  
-  /* Header */
-  header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  header p {
-    margin: 10px 0 0;
-    font-size: 1rem;
-  }
-  
-  /* Summary Section */
-  .summary {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .summary h2 {
-    margin-bottom: 15px;
-  }
-  
-  .summary ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .summary li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  
-  .clear-button {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 15px;
-  }
-  
-  .clear-button:hover {
-    background-color: #d32f2f;
-  }
-  
-  /* Upload Section */
-  .upload-container {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Table Section */
-  .table-container {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1000px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-  }
-  
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  table th {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-  }
-  
-  table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  table tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+}
+
+/* Upload Section */
+.upload-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container h2 {
+  margin-bottom: 15px;
+}
+
+.upload-container label {
+  font-weight: bold;
+}
+
+.upload-container input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.upload-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.upload-container button:hover {
+  background-color: #45a049;
+}
+
+.message {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Summary Section */
+.summary {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary h2 {
+  margin-bottom: 15px;
+}
+
+.summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.summary li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.clear-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.clear-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Table Section */
+.table-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

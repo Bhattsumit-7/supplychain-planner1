@@ -14,12 +14,13 @@
   <section class="upload-container">
     <h2>Upload Input Files</h2>
     <form id="upload-form" action="upload.php" method="POST" enctype="multipart/form-data">
-      <label for="orders">Upload Orders File:</label>
+      <label for="orders">Upload Orders File (orders.csv):</label>
       <input type="file" name="orders" id="orders" accept=".csv" required><br>
-      <label for="inventory">Upload Inventory File:</label>
+      <label for="inventory">Upload Inventory File (inventory.csv):</label>
       <input type="file" name="inventory" id="inventory" accept=".csv" required><br>
       <button type="submit">Upload and Process</button>
     </form>
+    <p id="upload-message" class="message"></p>
   </section>
 
   <section class="summary">
